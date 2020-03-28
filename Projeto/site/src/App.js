@@ -1,16 +1,18 @@
 import React from 'react';
-import { Componente1 } from './Componente1';
-import { Componente2 } from './Comp2';
-import { Switch, Route } from 'react-router-dom'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'font-awesome/css/font-awesome.min.css'
+import 'jquery/dist/jquery.min'
+import 'popper.js/dist/popper.min'
+import 'bootstrap/dist/js/bootstrap.min.js'
+
+import { Menu } from './components/menu';
+import { Routes } from './components/routes';
 
 function App() {
   return (
-    <div >
-      <Switch>
-        <Route path="/exemplo1" component={Componente1} />
-        <Route path="/exemplo2" component={Componente2} />
-        <Route path="*" component={Componente1} />
-      </Switch>
+    <div>
+      <Menu />
+      <Routes />
     </div>
   );
 }

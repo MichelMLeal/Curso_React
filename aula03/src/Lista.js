@@ -1,11 +1,9 @@
 import React from 'react';
 
-export class Lista extends React.Component {
-    render() {
-        return (
-            <ul>
-                <li>{this.props.informacao}</li>
-            </ul>
-        )
-    }
+export const Lista2 = (props) => {
+    return (
+        <ul>
+            <li>{props.informacao}</li>
+        </ul>
+    );
 }
